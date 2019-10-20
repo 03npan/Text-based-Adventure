@@ -23,6 +23,13 @@ class MapTile:
         if world.tile_exists(self.x, self.y + 1):
             moves.append(actions.MoveSouth())
         return moves
+    
+    def available_actions(self):
+        #Returns all of the available actions in this room.
+        moves = self.adjacent_moves()
+        moves.append(actions.ViewInventory())
+        
+        return moves
 
 class StartingRoom(MapTile):
     def intro_text(self):
