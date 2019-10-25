@@ -1,11 +1,12 @@
 import random
 import items, world
-#import world
+#import world - old world.py file may be needed for some of the unused code
 
 class Player():
     def __init__(self):
         self.inventory = [items.Gold(15), items.Rock(), items.CrustyBread()]
         self.hp = 100
+        #UNUSED CODE, KEPT FOR REFERENCE
         #self.location_x, self.location_y = world.starting_position
         self.x = 1
         self.y = 2
@@ -19,6 +20,7 @@ class Player():
             print(item, '\n')
 
     def move(self, dx, dy):
+        #UNUSED CODE, KEPT FOR REFERENCE
         #self.location_x += dx
         #self.location_y += dy
         #print(world.tile_exists(self.location_x, self.location_y).intro_text())
@@ -38,7 +40,7 @@ class Player():
     def move_west(self):
         self.move(dx=-1,dy=0)
 
-    #New method, unused
+    #UNUSED CODE, KEPT FOR REFERENCE
     '''
     def most_powerful_weapon(self, inventory):
         max_damage = 0
@@ -102,7 +104,6 @@ class Player():
         r = random.randint(0, len(available_moves) - 1)
         self.do_action(available_moves[r])
     
-    #New method
     def heal(self):
         consumables = [item for item in self.inventory if isinstance(item, items.Consumable)]
         if not consumables:

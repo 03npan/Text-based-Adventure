@@ -1,3 +1,6 @@
+#UNUSED CODE, KEPT FOR REFERENCE
+#REPLACED BY world.py (previously tiles.py)
+
 _world = {}
 starting_position = (0, 0)
 '''
