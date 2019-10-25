@@ -1,6 +1,6 @@
 import items, enemies, actions, random
 from player import Player
-#import world
+#import world - old world.py file may be needed for some of the unused code
 
 class MapTile:
     def __init__(self, x, y):
@@ -90,7 +90,7 @@ class EnemyRoom(MapTile):
         self.enemy = enemy
         super().__init__(x, y)
     '''
-    #New method
+
     def intro_text(self):
         text = self.alive_text if self.enemy.is_alive() else self.dead_text
         return text
@@ -116,6 +116,7 @@ class EnemyRoom(MapTile):
 
     def available_actions(self):
         if self.enemy.is_alive():
+            #UNUSED CODE, KEPT FOR REFERENCE
             #return [actions.Flee(tile=self), actions.Attack(enemy=self.enemy)]
             return [actions.Flee(tile=self), actions.Attack()]
         else:

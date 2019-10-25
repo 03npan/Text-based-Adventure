@@ -29,7 +29,6 @@ class Dagger(Weapon):
     def __init__(self):
         super().__init__(name="Dagger", description="A small dagger with some rust. Somewhat more dangerous than a rock.", value=10, damage=10)
 
-#New classes
 class Consumable(Item):
     #UNUSED CODE, KEPT FOR REFERENCE
     '''
@@ -48,6 +47,7 @@ class Consumable(Item):
 
 class CrustyBread(Consumable):
     def __init__(self):
+        #UNUSED CODE, KEPT FOR REFERENCE
         #self.name = "Crusty Bread"
         #self.healing_value = 5
         super().__init__(name="Crusty Bread", description="Old, stale bread. At least it's not moldy.", value=3, healing_value=5)
