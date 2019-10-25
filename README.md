@@ -1,6 +1,6 @@
 # text-based-games
 
-Thanks to Phillip Johnson for providing the tutorial and code for the example adventure! Some example code will still be added in the future. As of right now, there are several sections of code that are commented out. Most likely, these lines of code have been replaced by other lines of code that do the same thing; however, they are kept there in case someone wants to reference them.
+Thanks to Phillip Johnson for providing the tutorial and code for the example adventure! Some example code will still be added in the future. As of right now, there are several sections of code that are commented out. These have been labeled as unused, but they are there for reference if you would like to use a different approach to coding a certain method. Also, any files/folders that end with OLD are no longer used in the current code but are also there for reference.
 
 Feel free to use the example adventure as a base for your own text-based games.
 
