@@ -17,6 +17,7 @@ class MapTile:
     def adjacent_moves(self):
         #Returns all move actions for adjacent tiles.
         moves = []
+        #UNUSED CODE, KEPT FOR REFERENCE
         '''
         if world.tile_exists(self.x + 1, self.y):
             moves.append(actions.MoveEast())
@@ -83,6 +84,7 @@ class EnemyRoom(MapTile):
             self.dead_text = """
         A dead ogre reminds you of your triumph."""
         super().__init__(x, y)
+    #UNUSED CODE, KEPT FOR REFERENCE
     '''
     def __init__(self, x, y, enemy):
         self.enemy = enemy
@@ -93,6 +95,7 @@ class EnemyRoom(MapTile):
         text = self.alive_text if self.enemy.is_alive() else self.dead_text
         return text
 
+        #UNUSED CODE, KEPT FOR REFERENCE
         '''
         if self.enemy.is_alive():
             return """
@@ -127,6 +130,8 @@ class EmptyCavePath(MapTile):
     def modify_player(self, player):
         #Room has no action on player
         pass
+
+#UNUSED CODE, KEPT FOR REFERENCE
 '''
 class GiantSpiderRoom(EnemyRoom):
     def __init__(self, x, y):

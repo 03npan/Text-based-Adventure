@@ -31,6 +31,7 @@ class Dagger(Weapon):
 
 #New classes
 class Consumable(Item):
+    #UNUSED CODE, KEPT FOR REFERENCE
     '''
     def __init__(self):
         raise NotImplementedError()

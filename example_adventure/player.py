@@ -38,7 +38,7 @@ class Player():
     def move_west(self):
         self.move(dx=-1,dy=0)
 
-    #New method, unused
+    #UNUSED CODE, KEPT FOR REFERENCE
     '''
     def most_powerful_weapon(self, inventory):
         max_damage = 0
