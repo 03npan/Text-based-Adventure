@@ -6,7 +6,7 @@ class Item():
         self.value = value
 
     def __str__(self):
-        return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
+        return "{}\n=====\n{}\nValue: {}".format(self.name, self.description, self.value)
 
 class Gold(Item):
     def __init__(self, amt):
@@ -28,3 +28,25 @@ class Rock(Weapon):
 class Dagger(Weapon):
     def __init__(self):
         super().__init__(name="Dagger", description="A small dagger with some rust. Somewhat more dangerous than a rock.", value=10, damage=10)
+
+#New classes
+class Consumable(Item):
+    '''
+    def __init__(self):
+        raise NotImplementedError()
+
+    def __str__(self):
+        return "{} (+{} HP)".format(self.name, self.healing_value)
+    '''
+    def __init__(self , name, description, value, healing_value):
+        self.healing_value = healing_value
+        super().__init__(name, description, value)
+
+    def __str__(self):
+        return "{}\n=====\n{}\nValue: {}\n+{} HP".format(self.name, self.description, self.value, self.healing_value)
+
+class CrustyBread(Consumable):
+    def __init__(self):
+        #self.name = "Crusty Bread"
+        #self.healing_value = 5
+        super().__init__(name="Crusty Bread", description="Old, stale bread. At least it's not moldy.", value=3, healing_value=5)
